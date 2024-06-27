@@ -16,9 +16,9 @@ void math(char const *num)
         y = x*i;
         
         if (y%2 == 0) 
-            printf ("%d X %d = %d Par\n",x,i,y);
+            printf ("%d x %d = %d <Par>\n",i,x,y);
         else
-            printf ("%d X %d = %d Impar\n",x,i,y);
+            printf ("%d x %d = %d <Impar>\n",i,x,y);
         i++;
     }
         
@@ -26,7 +26,7 @@ void math(char const *num)
 
 int main (int argc, char **argv)
 {   
-    if (argc == 1)
+    if (argc != 2)
     {
         write (1, &"Error",5);
     }
