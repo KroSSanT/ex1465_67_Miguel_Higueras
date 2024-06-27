@@ -1,6 +1,6 @@
 # include <unistd.h>
 
-void *print_strs(int const arg, char const *str)
+void print_strs(int const arg, char const *str)
 {
     int i;
 
@@ -33,15 +33,12 @@ void *print_strs(int const arg, char const *str)
 int main (int argc, char **argv)
 {   
     int i;
-    int j;
-
+    
     i=1;
-    j=1;
     while (argc != i)
     {
-        print_strs(argc, argv[j]);
+        print_strs(i, argv[i]);
         i++;
-        j++;
     }
     return (0);
 }   
